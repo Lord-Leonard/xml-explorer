@@ -1,0 +1,49 @@
+.app-shell {
+  display: grid;
+  grid-template-columns: minmax(280px, 35vw) 1fr;
+  gap: 12px;
+  height: 100vh;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+}
+
+.controls label {
+  font-size: 12px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.controls textarea {
+  resize: none;
+  flex: 1;
+  width: 100%;
+  min-height: 240px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 12px;
+  font-family: Consolas, Menlo, Monaco, monospace;
+  line-height: 1.45;
+  box-sizing: border-box;
+}
+
+.explorer-host {
+  min-height: 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media (max-width: 960px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+    grid-template-rows: 260px 1fr;
+  }
+}
