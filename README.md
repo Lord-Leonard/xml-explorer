@@ -32,6 +32,7 @@ export function Example() {
 
 `xml-explorer` does not ship a built-in BT/BG catalog or namespace map. Consumers must provide `tree` and `namespaces`.
 For example Tree and Namespace, see [here](src/assets/btTree.ts)
+The `syntax` prop is a user-defined key (string) used to select `node.xpaths[syntax]` across your tree.
 
 ## Local development
 
